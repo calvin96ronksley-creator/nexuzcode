@@ -22,7 +22,7 @@ export const BoardPage: React.FC<BoardPageProps> = ({ isDark }) => {
   }, [isLoading]);
 
   return (
-    <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 py-4 flex flex-col min-h-[calc(100vh-160px)]">
+    <div className="w-full lg:w-[80%] mx-auto px-2 sm:px-4 py-4 flex flex-col min-h-[calc(100vh-160px)]">
       
       {/* Iframe Header / Toolbar */}
       <div className={`flex items-center justify-between p-3 sm:px-5 rounded-t-xl border-x border-t transition-colors ${
@@ -53,7 +53,7 @@ export const BoardPage: React.FC<BoardPageProps> = ({ isDark }) => {
       </div>
 
       {/* Iframe Container */}
-      <div className={`relative flex-1 min-h-[70vh] border rounded-b-xl overflow-hidden shadow-xl ${
+      <div className={`relative flex-1 min-h-[80vh] border rounded-b-xl overflow-hidden shadow-xl ${
         isDark 
           ? 'border-purple-500/30 bg-[#060a14]' 
           : 'border-purple-200 bg-white'
