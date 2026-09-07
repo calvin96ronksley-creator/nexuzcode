@@ -1,0 +1,6 @@
+{
+  "name": "NexuzCode",
+  "description": "Futuristische Cyberpunk-Website für nexuzcode.de mit zentrierter Navigation, Neon-Design, Dark-Mode, News, Downloads, APK-Mirrors und Board-Anbindung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
