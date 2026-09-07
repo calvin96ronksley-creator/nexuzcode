@@ -53,7 +53,7 @@ export const BoardPage: React.FC<BoardPageProps> = ({ isDark }) => {
       </div>
 
       {/* Iframe Container */}
-      <div className={`relative flex-1 min-h-[80vh] border rounded-b-xl overflow-hidden shadow-xl ${
+      <div className={`relative w-full h-[75vh] sm:h-[80vh] border rounded-b-xl overflow-hidden shadow-xl ${
         isDark 
           ? 'border-purple-500/30 bg-[#060a14]' 
           : 'border-purple-200 bg-white'
@@ -95,7 +95,7 @@ export const BoardPage: React.FC<BoardPageProps> = ({ isDark }) => {
         <iframe
           src={SITE_INFO.boardUrl}
           title="NexuzCode phpBB3 Board"
-          className="w-full h-full border-none relative z-20"
+          className="absolute inset-0 w-full h-full border-none z-20 bg-white"
           onLoad={() => setIsLoading(false)}
           onError={() => {
             setIsLoading(false);
